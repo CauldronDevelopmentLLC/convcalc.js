@@ -1,0 +1,31 @@
+<html lang="en-US">
+  <head>
+    <title>convcalc.js Example</title>
+    <meta charset="utf-8"/>
+
+    <script src="convcalc.js"></script>
+
+    <style>
+      .convcalc-item {margin: 0.5em}
+      .convcalc-item input {margin-right: 0.5em}
+    </style>
+
+  </head>
+  <body>
+    <h1>convcalc.js Example</h1>
+    <div id="calc"></div>
+    <script>
+      new ConvCalc({
+        id: 'calc',
+        init: 1,
+        precision: 3,
+        units: [
+          {label: 'mm', scale: 1,         title: 'Millimeters'},
+          {label: 'm',  scale: 1000,      title: 'Meters'},
+          {label: 'in', scale: 25.4,      title: 'Inches'},
+          {label: 'ft', scale: 12 * 25.4, title: 'Feet'},
+        ]
+       })
+    </script>
+  </body>
+</html>
